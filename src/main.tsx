@@ -6,10 +6,12 @@ import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Library from "./pages/Library";
+import MyList from "./pages/MyList";
 
 const router = createBrowserRouter([
   { path: "/home", element: <Home /> },
   { path: "/", element: <SignIn /> },
+  { path: "my-list", element: <MyList /> },
   { path: "/library", element: <Library /> },
   { path: "/signin", element: <SignIn /> },
   { path: "/signup", element: <SignUp /> },
