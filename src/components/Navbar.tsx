@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="navbar fixed z-50 bg-gradient-to-b from-black to-transparent px-4 text-base-100">
         <div className="navbar-start">
           <div className="dropdown">
-            <label tabIndex={0} className="btn-ghost btn px-2 lg:hidden">
+            <label tabIndex={0} className="btn-ghost btn px-2 md:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -31,10 +31,10 @@ const Navbar = () => {
               <li>
                 <a
                   onClick={() => {
-                    navigate("/library");
+                    navigate("/home");
                   }}
                 >
-                  圖書館
+                  首頁
                 </a>
               </li>
               <li>
@@ -48,15 +48,15 @@ const Navbar = () => {
           >
             See&Read
           </button>
-          <div className="hidden lg:flex">
+          <div className="hidden md:flex">
             <ul className="menu menu-horizontal px-1">
               <li>
                 <a
                   onClick={() => {
-                    navigate("/library");
+                    navigate("/home");
                   }}
                 >
-                  圖書館
+                  首頁
                 </a>
               </li>
               <li>
