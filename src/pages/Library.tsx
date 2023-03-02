@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Navbar from "../components/Navbar";
 
 const Library = () => {
   return (
-    <div>Library</div>
-  )
-}
+    <>
+      <Navbar />
+    </>
+  );
+};
 
-export default Library
+export default Library;
