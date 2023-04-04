@@ -3,9 +3,8 @@ const Book = () => {
   const navigate = useNavigate();
   return (
     <>
-      {/* <Navbar /> */}
       <div className="flex h-screen flex-col justify-start gap-4 bg-[#CCAE7F] p-10">
-        <div className="flex w-full  gap-2">
+        <div className="flex w-full gap-2">
           <h2 className="mr-auto text-5xl font-black text-[#544231]">
             奶奶的花
           </h2>

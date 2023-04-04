@@ -1,27 +1,23 @@
-import { useNavigate } from "react-router-dom";
+import StorybookIcon from "../assets/StorybookIcon.png";
 type CategoryRowProps = {
   name: string;
 };
 
 const CategoryRow = ({ name }: CategoryRowProps) => {
-  const navigate = useNavigate();
   return (
-    <div className="flex w-screen flex-col">
+    <div className="w-full rounded-lg bg-[#411A08] p-4 text-white border-2 border-[#EAA916]">
       <h2>{name}</h2>
-      <div className="flex w-screen space-x-4 overflow-x-auto">
-        <div
-          className="aspect-video h-24 flex-shrink-0 bg-neutral cursor-pointer"
-          onClick={() => {
-            navigate("/book");
-          }}
-        ></div>
-        <div className="aspect-video h-24 flex-shrink-0 bg-neutral"></div>
-        <div className="aspect-video h-24 flex-shrink-0 bg-neutral"></div>
-        <div className="aspect-video h-24 flex-shrink-0 bg-neutral"></div>
-        <div className="aspect-video h-24 flex-shrink-0 bg-neutral"></div>
-        <div className="aspect-video h-24 flex-shrink-0 bg-neutral"></div>
-        <div className="aspect-video h-24 flex-shrink-0 bg-neutral"></div>
-        <div className="aspect-video h-24 flex-shrink-0 bg-neutral"></div>
+      <div className="flex items-center gap-4 overflow-x-scroll">
+        <img src={StorybookIcon} alt="" className="h-20" />
+        <img src={StorybookIcon} alt="" className="h-20" />
+        <img src={StorybookIcon} alt="" className="h-20" />
+        <img src={StorybookIcon} alt="" className="h-20" />
+        <img src={StorybookIcon} alt="" className="h-20" />
+        <img src={StorybookIcon} alt="" className="h-20" />
+        <img src={StorybookIcon} alt="" className="h-20" />
+        <img src={StorybookIcon} alt="" className="h-20" />
+        <img src={StorybookIcon} alt="" className="h-20" />
+        <img src={StorybookIcon} alt="" className="h-20" />
       </div>
     </div>
   );

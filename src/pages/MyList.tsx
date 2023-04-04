@@ -1,25 +1,31 @@
 import React from "react";
 import Book from "../components/Book";
-import Navbar from "../components/Navbar";
+import titleImage from "../assets/iMagicNationIcon.png";
+import CategoryRow from "../components/CategoryRow";
+import activeTab from "../assets/activeTab.png";
 
 const MyList = () => {
   return (
     <>
-      <Navbar />
-      <div className="flex flex-col px-4 pt-20">
-        <div className="flex">
-          <h2 className="pb-8 text-3xl font-bold mr-auto">我的檔案</h2>
+      <div className="flex min-h-screen flex-col bg-[#411A08] pt-10 gap-8">
+        <div className="flex items-center px-4">
+          <img src={titleImage} className="mr-auto h-12" alt="" />
           <button className="btn">Add</button>
         </div>
-        <div className="grid grid-flow-row grid-cols-2 gap-4 sm:grid-cols-4 lg:grid-cols-5">
-          <Book name="Chinese" />
-          <Book name="English" />
-          <Book name="Math" />
-          <Book name="English" />
-          <Book name="Chinese" />
-          <Book name="English" />
-          <Book name="Chinese" />
-          <Book name="English" />
+        <div
+          className="flex w-screen grow flex-col gap-8 p-8"
+          style={{
+            backgroundImage: `url(${activeTab})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <CategoryRow name="我的故事" />
+          <CategoryRow name="我的故事" />
+          <CategoryRow name="我的故事" />
+          <CategoryRow name="我的故事" />
+          <CategoryRow name="我的故事" />
         </div>
       </div>
     </>
