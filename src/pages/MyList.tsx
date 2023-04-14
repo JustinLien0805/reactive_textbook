@@ -1,15 +1,23 @@
-import React from "react";
-import Book from "../components/Book";
+
 import titleImage from "../assets/iMagicNationIcon.png";
 import CategoryRow from "../components/CategoryRow";
 import activeTab from "../assets/activeTab.png";
+import { useNavigate } from "react-router-dom";
 
 const MyList = () => {
+  const navigate = useNavigate();
   return (
     <>
-      <div className="flex min-h-screen flex-col bg-[#411A08] pt-10 gap-8">
+      <div className="flex min-h-screen flex-col gap-8 bg-[#411A08] pt-10">
         <div className="flex items-center px-4">
-          <img src={titleImage} className="mr-auto h-12" alt="" />
+          <img
+            src={titleImage}
+            className="mr-auto h-12"
+            alt=""
+            onClick={() => {
+              navigate("/home");
+            }}
+          />
           <button className="btn">Add</button>
         </div>
         <div

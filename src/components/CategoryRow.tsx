@@ -5,19 +5,13 @@ type CategoryRowProps = {
 
 const CategoryRow = ({ name }: CategoryRowProps) => {
   return (
-    <div className="w-full rounded-lg bg-[#411A08] p-4 text-white border-2 border-[#EAA916]">
+    <div className="w-full rounded-lg border-2 border-[#EAA916] bg-[#411A08] p-4 text-white">
       <h2>{name}</h2>
       <div className="flex items-center gap-4 overflow-x-scroll">
-        <img src={StorybookIcon} alt="" className="h-20" />
-        <img src={StorybookIcon} alt="" className="h-20" />
-        <img src={StorybookIcon} alt="" className="h-20" />
-        <img src={StorybookIcon} alt="" className="h-20" />
-        <img src={StorybookIcon} alt="" className="h-20" />
-        <img src={StorybookIcon} alt="" className="h-20" />
-        <img src={StorybookIcon} alt="" className="h-20" />
-        <img src={StorybookIcon} alt="" className="h-20" />
-        <img src={StorybookIcon} alt="" className="h-20" />
-        <img src={StorybookIcon} alt="" className="h-20" />
+        <img src={StorybookIcon} alt="" className="h-32" />
+        <img src={StorybookIcon} alt="" className="h-32" />
+        <img src={StorybookIcon} alt="" className="h-32" />
+        <img src={StorybookIcon} alt="" className="h-32" />
       </div>
     </div>
   );
